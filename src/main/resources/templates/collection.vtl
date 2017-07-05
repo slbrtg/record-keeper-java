@@ -1,10 +1,14 @@
 <!-- collection.vtl -->
-<div id="collection" class="container">
+<div id="collection" class="container-fluid">
   #foreach ($record in $allRecords)
-    <h3>$record.getArtist(),$record.getAlbum()</h3>
+    <div class="record-box">
+      <img id="default-record-sleeve"src="images/record-sleeve.jpg" alt="default record sleeve" />
+      <h3>$record.getArtist()</h3>
+      <h4>$record.getAlbum()</h4>
+    </div>
   #end
 </div>
-<div id="add-record-form-div">
+<div id="add-record-form-div" class="container">
   <form id="add-record-form" class="form-control" action="/collection" method="post">
     <label for="artist"></label>
     <input  id="artist" name="artist" value="artist" type="text">

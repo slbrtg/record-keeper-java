@@ -16,6 +16,11 @@
   height: 800px;
 }
 
+#default-record-sleeve{
+  height: 200px;
+  width: 200px;
+}
+
 #add-record-form {
   height: 50px;
   text-align: right;
