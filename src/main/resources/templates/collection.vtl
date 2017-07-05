@@ -1,14 +1,16 @@
-<!-- coolection.vtl -->
+<!-- collection.vtl -->
 <div id="collection" class="container">
-
+  #foreach ($record in $allRecords)
+    <h3>$record.getArtist(),$record.getAlbum()</h3>
+  #end
 </div>
 <div id="add-record-form-div">
-  <form id="add-record-form" class="form-control">
-    <label for="record-form"></label>
-    <input type="form-control" name="artist" value="artist">
-    <label for="record-form"></label>
-    <input type="form-control" name="album" value="album">
-    <button id="add-record-btn"type="submit" class="btn btn-md btn-primary">Add Record</button>
+  <form id="add-record-form" class="form-control" action="/collection" method="post">
+    <label for="artist"></label>
+    <input  id="artist" name="artist" value="artist" type="text">
+    <label for="album"></label>
+    <input  id="album" name="album" value="album" type="text">
+    <button id="add-record-btn" type="submit" class="btn btn-md btn-primary">Add Record</button>
   </form>
 </div>
-<!-- coolection.vtl -->
+<!-- collection.vtl -->
