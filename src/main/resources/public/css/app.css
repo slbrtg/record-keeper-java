@@ -11,3 +11,22 @@
   margin-top: 0.5em;
   margin-left: 40em;
 }
+
+#collection {
+  height: 800px;
+}
+
+#add-record-form {
+  height: 50px;
+  text-align: right;
+}
+
+#add-record-form input {
+  margin-right: 20px;
+  height: 35px;
+  width: 250px;
+}
+
+#add-record-btn {
+  margin-left: 25px;
+}
